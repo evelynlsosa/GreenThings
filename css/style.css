@@ -40,6 +40,125 @@ nav a img {
   margin-right: 30px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --green:#0d9979;
+}
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all .5s cubic-bezier(.37,1.14,.26,1.24);
+}
+
+
+/*Inicio*/
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color:#555;
+  padding:1rem;
+  padding-top: 7rem;
+}
+
+.heading i{
+  color:var(--green);
+  font-size: 0rem;
+}
+
+.home{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content{
+  text-align: center;
+  padding:1rem;
+}
+
+.home .content h1{
+  font-size: 5rem;
+  color:var(--green);
+}
+
+.home .content p{
+  font-size: 1.9rem;
+  color:#333;
+  padding:1rem 0;
+  width: 70rem;
+}
+
+
+
+.about .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about .row .image{
+  flex:1 1 40rem;
+  padding:2rem;
+}
+
+.about .row .image img{
+  width: 100%;
+}
+
+.about .row .content{
+  flex:1 1 40rem;
+  padding:2rem;
+}
+
+.about .row .content h3{
+  font-size: 2rem;
+  color:var(--green);
+}
+
+.about .row .content p{
+  font-size: 1.0rem;
+  color:#666;
+  padding:1rem 0;
+}
+image.redimension{
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+main{
+  min-height: 50px;
+  width: 1100px;
+  margin: auto;
+}
+
+#TresR {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#TresR article{
+  width: 326px;
+  margin-bottom: 76px;
+}
+#TresR article h2 img{
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 45px;
+  height: 45px
+}
+
 /*###SOBRE NOSOTROS###*/
 #principal-nosotros {
   width: 100%;
