@@ -188,6 +188,7 @@ main{
   height: 45px
 }
 
+
 /*###SOBRE NOSOTROS###*/
 #principal-nosotros {
   width: 100%;
@@ -297,9 +298,23 @@ main{
 }
 
 /*FIN CARDS DE LAS CHICAS*/
+
 /*###FIN SOBRE NOSOTROS###*/
 
 /*###PUNTOS VERDES###*/
+
+/* MAPA */
+
+#map{
+  height: 100%;
+  width: 98%;
+  padding: 18%;
+  margin: 20px;
+  margin-right: 20px;
+}
+
+/* FIN MAPA */
+
 .puntos-verdes{
   padding: 20px;
   display: grid;
