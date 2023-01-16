@@ -342,7 +342,7 @@ main{
 
 /*###GRILLA PUNTOS VERDES###*/
 
-#CABA{
+#CABA, #ZONA-NORTE, #ZONA-SUR, #ZONA-OESTE {
 
   margin: 32px 0;
   display: grid;
@@ -350,35 +350,6 @@ main{
   grid-template-rows: 250px auto;
   gap: 8px;
 }
-
-#ZONA-NORTE{
-
-  margin: 32px 0;
-  display: grid;
-
-  grid-template-columns: 320px 320px 320px 320px;
-  grid-template-rows: 250px auto;
-  gap: 8px;
-}
-#ZONA-SUR{
-
-  margin: 32px 0;
-  display: grid;
-
-  grid-template-columns: 320px 320px 320px 320px;
-  grid-template-rows: 250px auto;
-  gap: 8px;
-}
-#ZONA-OESTE{
-
-  margin: 32px 0;
-  display: grid;
-
-  grid-template-columns: 320px 320px 320px 320px;
-  grid-template-rows: 250px auto;
-  gap: 8px;
-}
-
 
 /*###FIN PUNTOS VERDES###*/
 
