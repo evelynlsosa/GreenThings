@@ -1,3 +1,5 @@
+/* COMIENZO MAPS */
+
 const baCoords = {lat: -34.6083, lng: -58.3712};
 const mapDiv = document.getElementById("map");
 let map;
@@ -93,3 +95,68 @@ function initMap() {
         icon: "./img/point.png"
       });  
 }
+
+/* FIN MAPS */
+
+/* BENEFICIOS SWIPER CARRUSEL*/
+
+var swiper = new Swiper(".beneficios-slider", {
+  grabCursor: true,
+  loop: true,
+  centeredSlides:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+/* FIN BENEFICIOS SWIPER CARRUSEL*/
+
+/* CARRUSEL DE PRODUCTOS */
+
+var swiper = new Swiper(".producto-slider", {
+  grabCursor:true,
+  loop:true,
+  centeredSlides:true,
+  spaceBetween: 20,
+  pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+  },
+  breakpoints: {
+     0: {
+       slidesPerView: 1,
+     },
+     700: {
+       slidesPerView: 2,
+     },
+     1000: {
+       slidesPerView: 3,
+     },
+  },
+});
+
+let previewContainer = document.querySelector('.producto-preview-container');
+let previewBox = previewContainer.querySelectorAll('.producto-preview');
+
+document.querySelectorAll('.producto .slide').forEach(producto =>{
+producto.onclick = () =>{
+   previewContainer.style.display = 'flex';
+   let name = producto.getAttribute('data-name');
+   previewBox.forEach(preveiw =>{
+      let target = preveiw.getAttribute('data-target');
+      if(name == target){
+         preveiw.classList.add('active');
+      }
+   });
+};
+});
+
+previewContainer.querySelector('#close-preview').onclick = () =>{
+previewContainer.style.display = 'none';
+previewBox.forEach(close =>{
+   close.classList.remove('active');
+});
+};
+
+/* FIN CARRUSEL DE PRODUCTOS */

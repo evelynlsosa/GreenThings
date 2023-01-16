@@ -1,63 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Things</title>
+    <title>Document</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- SWIPER CARRUSEL BENEFICIOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
 </head>
-<body>
-    <header>
+
+<header>
+
+    <body>
+
         <!-- logo -->
-            <a href="#" class="logo">
-                <img src="img/gt1.png" alt="Logo GreenThings">
-                <h2>GreenThings</h2>
-            </a>
-            <!-- navegación -->
-            <nav>
-                <a href="index.html" class="nav-link">Inicio</a>
-                <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
-                <a href="puntos-verdes.html" class="nav-link">Puntos Verdes</a>
-                <a href="beneficios.html" class="nav-link">Beneficios</a>
-                <a href="contacto.html" class="nav-link">Contacto</a>
-                <a href="iniciar-sesión.html" class="nav-link">
-                    <img src="img/hojita.png" alt="iniciar-sesión">
-                </a>
-            </nav>
-    </header>
+        <a href="#" class="logo">
+            <img src="img/gt1.png" alt="Logo GreenThings">
+            <h2>GreenThings</h2>
+        </a>
+        <!-- navegación -->
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+            <a href="puntos-verdes.html" class="nav-link">Puntos Verdes</a>
+            <a href="beneficios.html" class="nav-link">Beneficios</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+            <a href="iniciar-sesión.html" class="nav-link">Iniciar Sesión</a>
+        </nav>
+</header>
 
+<!-- ## BENEFICIOS ## -->
 
+<!-- COMIENZO DE CARRUSEL -->
 
+<section class="beneficios" id="beneficios">
 
+    <div class="swiper beneficios-slider">
 
-    
+        <div class="swiper-wrapper">
 
-
-        <!--FOOTER-->
-        <footer>
-
-            <!--LOGO FOOTER-->
-            <div id="Logo">
-    
-                <img src="img/gt1.png" href="index.html" alt="Logo GreenThings" id="logo-Footer">
-                <h3>GreenThings</h3>
+            <div class="swiper-slide slide" style="background: url(img/beneficios-slide-1.jpg) no-repeat;">
+                <div class="content">
+                    <h3>CONOCÉ NUESTROS BENEFICIOS</h3>
+                    <a href="#" class="btn1">CANJEA</a>
+                </div>
             </div>
-            <!--REDES SOCIALES-->
-            <div id="redes">
-                <a href="#" target="_blank">
-                    <img src="img/twitter-w.png" alt="Logo de Twitter">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="img/instagram-w.png" alt="Logo de Instagram">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="img/facebook-w.png" alt="Logo de Facebook">
-                </a>
+
+            <div class="swiper-slide slide" style="background: url(img/beneficios-slide-2.jpg) no-repeat;">
+                <div class="content">
+                    <h3>COMENZA EL CAMBIO RECICLANDO</h3>
+                    <a href="#" class="btn1">CANJEA</a>
+                </div>
             </div>
-    
-        </footer>
-        <!--FIN FOOTER-->
-   
+
+            <div class="swiper-slide slide" style="background: url(img/beneficios-slide-3.jpg) no-repeat;">
+                <div class="content">
+                    <h3>DESCUBRÍ NUESTROS PRODUCTOS</h3>
+                    <a href="#" class="btn1">CANJEA</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTONES "< >" DEL CARRUSEL SWIPER -->
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- FIN BOTONES "< >" DEL CARRUSEL SWIPER -->
+
+    </div>
+
+    <!-- FIN DE CARRUSEL -->
+
+    <!-- COMIENZO DE CUADRADOS INFORMATIVOS -->
+
+    <section class="service" id="service">
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-recycle"></i> <!-- icono -->
+                <h3>RECICLA</h3>
+                <p>Junta tus residuos reciclables y llevalos a tu punto verde más cercano. <br> Obtendrás puntos por cada 100 gramos que recicles. </p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-coins"></i>
+                <h3>CANJEA</h3>
+                <p>Registrate y subí tus puntos a nuestra página. <br> Suma cada vez más puntos y busca los productos que quieras canjear.</p> 
+            </div>
+
+            <div class="box">
+                <i class="fas fa-heart"></i>
+                <h3>DISFRUTA</h3>
+                <p>Retira tus productos en tu punto más cercano y disfruta de un planeta más verde.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FIN CUADRADOS INFORMATIVOS -->
+
+    <!-- COMIENZO DEL CARRUSEL DE PRODUCTOS -->
+
+</section>
+
+<section class="producto" id="producto">
+
+    <div class="heading1">
+        <br>
+        <br>
+        <h3>¡MIRA ALGUNOS DE NUESTROS PRODUCTOS!</h3>
+    </div>
+
+    <div class="swiper producto-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" data-name="producto-1">
+                <img src="img/food-img-1.png" alt="">
+                <h3>BOLSA REUTILIZABLE</h3>
+                <div class="price">100 PUNTOS</div>
+            </div>
+
+            <div class="swiper-slide slide" data-name="producto-2">
+                <img src="img/food-img-2.png" alt="">
+                <h3>BOLSA REUTILIZABLE</h3>
+                <div class="price">100 PUNTOS</div>
+            </div>
+
+            <div class="swiper-slide slide" data-name="producto-3">
+                <img src="img/food-img-3.png" alt="">
+                <h3>BOLSA REUTILIZABLE</h3>
+                <div class="price">100 PUNTOS</div>
+            </div>
+
+            <div class="swiper-slide slide" data-name="producto-4">
+                <img src="img/food-img-4.png" alt="">
+                <h3>BOLSA REUTILIZABLE</h3>
+                <div class="price">100 PUNTOS</div>
+            </div>
+
+            <div class="swiper-slide slide" data-name="producto-5">
+                <img src="img/food-img-5.png" alt="">
+                <h3>BOLSA REUTILIZABLE</h3>
+                <div class="price">100 PUNTOS</div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- FIN DEL CARRUSEL DE PRODUCTOS -->
+
+<!-- COMIENZO DE PREVISUALIZACIÓN DE PRODUCTOS EN EL CARRUSEL -->
+
+<section class="producto-preview-container">
+
+    <div id="close-preview" class="fas fa-times"></div>
+
+    <div class="producto-preview" data-target="producto-1">
+        <img src="img/food-img-1.png" alt="">
+
+        <h3>BOLSA REUTILIZABLE</h3>
+  
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="price">100 PUNTOS</div>
+        <a href="#" class="btn">CANJEAR</a>
+    </div>
+
+    <div class="producto-preview" data-target="producto-2">
+        <img src="img/food-img-2.png" alt="">
+
+        <h3>BOLSA REUTILIZABLE</h3>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="price">100 PUNTOS</div>
+        <a href="#" class="btn">CANJEAR</a>
+    </div>
+
+    <div class="producto-preview" data-target="producto-3">
+        <img src="img/food-img-3.png" alt="">
+
+        <h3>BOLSA REUTILIZABLE</h3>
+  
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="price">100 PUNTOS</div>
+        <a href="#" class="btn">CANJEAR</a>
+    </div>
+
+    <div class="producto-preview" data-target="producto-4">
+        <img src="img/food-img-4.png" alt="">
+
+        <h3>BOLSA REUTILIZABLE</h3>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="price">100 PUNTOS</div>
+        <a href="#" class="btn">CANJEAR</a>
+    </div>
+
+    <div class="producto-preview" data-target="producto-5">
+        <img src="img/food-img-5.png" alt="">
+
+        <h3>BOLSA REUTILIZABLE</h3>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="price">100 PUNTOS</div>
+        <a href="#" class="btn">CANJEAR</a>
+    </div>
+
+</section>
+
+<!-- FIN DE PREVISUALIZACIÓN DE PRODUCTOS EN EL CARRUSEL -->
+
+<!-- ### FIN BENEFICIOS ### -->
+
+<!-- ### FOOTER ### -->
+<footer>
+
+    <!--LOGO FOOTER-->
+    <div id="Logo">
+
+        <img src="img/gt1.png" href="index.html" alt="Logo GreenThings" id="logo-Footer">
+        <h3>GreenThings</h3>
+    </div>
+    <!--REDES SOCIALES-->
+    <div id="redes">
+        <a href="#" target="_blank">
+            <img src="img/twitter-w.png" alt="Logo de Twitter">
+        </a>
+        <a href="#" target="_blank">
+            <img src="img/instagram-w.png" alt="Logo de Instagram">
+        </a>
+        <a href="#" target="_blank">
+            <img src="img/facebook-w.png" alt="Logo de Facebook">
+        </a>
+    </div>
+
+</footer>
+
+<!-- ### FIN FOOTER ### -->
+
+<!-- JS SWIPER CARRUSEL -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- CARPETA JS -->
+<script src="js/scrip.js"></script>
+
 </body>
+
 </html>
