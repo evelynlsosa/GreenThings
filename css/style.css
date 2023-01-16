@@ -189,46 +189,53 @@ main {
 
 
 /*###SOBRE NOSOTROS###*/
-#principal-nosotros {
-  width: 100%;
-  height: 650px;
-  background-image: url(../img/humanos-reciclan.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: 100% 115%;
-
+.SobreNosotros{
+  min-height: 100vh;
   display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-  padding-left: 70px;
+  background:linear-gradient(rgba(238, 240, 235, 0.75), rgba(236, 238, 234, 0.75)), url(../img/humanos-reciclan.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-#principal-nosotros h2 {
-  font-size: 2rem;
+.SobreNosotros .content{
   display: flex;
-  justify-content: center;
+  text-align: center;
+  padding:2rem;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
 }
 
-#principal-nosotros p {
-  font-size: 18px;
-  padding: auto;
+.SobreNosotros .content h1{
+  font-size: 4rem;
+  color:#55be8a;
+  
+}
+
+.SobreNosotros .content p{
+  font-size: 1.3rem;
+  color:rgb(3, 3, 3);
+  padding:1rem 0;
+  width: 70rem;
+
 }
 
 
 /*CARDS DE LAS CHICAS*/
-.container-card {
+main {
   width: 90%;
+  overflow:hidden;
+  font-family: Helvetica, sans-serif;
+  color: rgb(14, 13, 13);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 1100px;
-  margin: auto;
-}
+  margin:auto;
+  flex-wrap: wrap;
 
+}
 .title-cards {
   width: 100%;
   max-width: 1080px;
@@ -239,63 +246,148 @@ main {
   color: #7a7a7a;
 }
 
+.container {
+  width: 350px;
+  height: 500px;
+  perspective: 800px;
+  
+}
+
+.container:hover > .card  {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+ /*Evelyn Sosa*/
+  .card .front   {
+  background-image: url(../img/Evelyn\ Sosa.jpg);
+  background-size: cover;
+  
+}
+
+.card {
+  height: 90%;
+  width: 90%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+/*Yamisbel Luna*/
+.container:hover > .card2  {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+
 .card2 {
-  width: 330px;
-  height: 650px;
-  margin: 20px 10px;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  transition: all 400ms ease-out;
-  cursor: default;
+  height: 90%;
+  width: 90%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.card2 .front   {
+  background-image: url(../img/Yamisbel\ Luna.jpg);
+  background-size: cover;
+  
+}
+/*Daniela Avalos*/
+.container:hover > .card3  {
+  cursor: pointer;
+  transform: rotateY(180deg);
 }
 
-.card2:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
+.card3 {
+  height: 90%;
+  width: 90%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.card3 .front   {
+  background-image: url(../img/Daniela\ Avalos.jpg);
+  background-size: cover;
+  
+}
+/*Cynthia Morales*/
+.container:hover > .card4  {
+  cursor: pointer;
+  transform: rotateY(180deg);
 }
 
-.card2 img {
+.card4 {
+  height: 90%;
+  width: 90%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.card4 .front   {
+  background-image: url(../img/Cynthia.jpg);
+  background-size: cover;
+}
+
+/*Melina Britez*/
+.container:hover > .card5  {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card5 {
+  height: 90%;
+  width: 90%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.card5 .front   {
+  background-image: url(../img/MelinaBritez.jpeg);
+  background-size: cover;
+  
+}
+/*María Sol*/
+.container:hover > .card6  {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card6 {
+  height: 90%;
+  width: 90%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.card6 .front   {
+  background-image: url(../img/María\ Sol.jpg);
+  background-size: cover;
+  
+}
+.front,
+.back {
+  height: 100%;
   width: 100%;
-  height: 350px;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
 }
 
-.card2 .container-card {
-  padding: 15px;
-  text-align: center;
-}
 
-.card2 .container-card h3 {
-  margin-bottom: 15px;
-  color: #7a7a7a;
+
+.back {
+  background-color:#568d4f;
+  transform: rotateY(180deg);
   display: flex;
-  justify-content: center;
-}
-
-.card2 .container-card p {
-  line-height: 1.8;
-  color: #6a6a6a;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.card2 .container-card a {
-  display: inline-block;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  color: #045658;
-  transition: all 400ms ease;
+  gap: 5rem;
 }
+.back .p {
+ font-size: small;
 
-.card2 .container-card a:hover {
-  background: #045658;
-  color: #fff;
 }
-
 /*FIN CARDS DE LAS CHICAS*/
 
 /*###FIN SOBRE NOSOTROS###*/
