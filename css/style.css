@@ -1,9 +1,51 @@
-/*### HEADER NAV ###*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --green:#0d9979;
+}
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all .5s cubic-bezier(.37,1.14,.26,1.24);
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 a {
   text-decoration: none;
   color: white;
 }
+
+body {
+  width: 100%;
+  height: 650px;
+  background-color: white;
+  color: var(--text-white);
+  font-family: aileron, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+/*pueden cambiar desde acá los colores*/
+:root {
+  --text-white: #535c59;
+  --text-ligh-color: #495551;
+  --body-bg-color: #eef6d7;
+  --glass-bg-color: hsla(0, 0%, 100%, 0.5);
+  --border-color: hsl(0, 0%, 100%);
+  --blur: blur(10px);
+  --button-hover-color: rgba(107, 180, 57, 0.3);
+}
+
+
+/*### HEADER NAV ###*/
 
 header {
   display: flex;
@@ -40,20 +82,6 @@ nav a img {
   margin-right: 30px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-
-:root{
-    --green:#0d9979;
-}
-
-*{
-  font-family: 'Open Sans', sans-serif;
-  margin:0; padding:0;
-  box-sizing: border-box;
-  text-transform: capitalize;
-  text-decoration: none;
-  transition: all .5s cubic-bezier(.37,1.14,.26,1.24);
-}
 
 
 /*Inicio*/
@@ -139,6 +167,7 @@ main{
   min-height: 50px;
   width: 1100px;
   margin: auto;
+  padding-right: 80px;
 }
 
 #TresR {
@@ -268,38 +297,92 @@ main{
 }
 
 /*FIN CARDS DE LAS CHICAS*/
+/*###FIN SOBRE NOSOTROS###*/
+
+/*###PUNTOS VERDES###*/
+.puntos-verdes{
+  padding: 20px;
+  display: grid;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.puntos-verdes h2{
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  background-color: #045658;
+}
+
+.puntos-verdes article{
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #045658;
+}
+
+.puntos-verdes article img{
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px
+}
+
+
+.puntos-verdes article h3, span{
+  color: black;
+  display: flex;
+  justify-content:baseline;
+
+}
+
+.puntos-verdes article:hover{
+  background-color: #dfdfaa;
+}
+
+/*###GRILLA PUNTOS VERDES###*/
+
+#CABA{
+
+  margin: 32px 0;
+  display: grid;
+  grid-template-columns: 320px 320px 320px 320px;
+  grid-template-rows: 250px auto;
+  gap: 8px;
+}
+
+#ZONA-NORTE{
+
+  margin: 32px 0;
+  display: grid;
+
+  grid-template-columns: 320px 320px 320px 320px;
+  grid-template-rows: 250px auto;
+  gap: 8px;
+}
+#ZONA-SUR{
+
+  margin: 32px 0;
+  display: grid;
+
+  grid-template-columns: 320px 320px 320px 320px;
+  grid-template-rows: 250px auto;
+  gap: 8px;
+}
+#ZONA-OESTE{
+
+  margin: 32px 0;
+  display: grid;
+
+  grid-template-columns: 320px 320px 320px 320px;
+  grid-template-rows: 250px auto;
+  gap: 8px;
+}
+
+
+/*###FIN PUNTOS VERDES###*/
 
 /*###INICIAR SESIÓN###*/
-
-/*pueden cambiar desde acá los colores*/
-:root {
-  --text-white: #535c59;
-  --text-ligh-color: #495551;
-  --body-bg-color: #eef6d7;
-  --glass-bg-color: hsla(0, 0%, 100%, 0.5);
-  --border-color: hsl(0, 0%, 100%);
-  --blur: blur(10px);
-  --button-hover-color: rgba(107, 180, 57, 0.3);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  height: 650px;
-  background-color: white;
-  color: var(--text-white);
-  font-family: aileron, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  overflow-x: hidden;
-}
-
 .gradient-text {
   background: #eef6d7;
   -webkit-background-clip: text;
