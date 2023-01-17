@@ -201,8 +201,8 @@ header {
   }
   
   .service .box-container .box{
-    width: 595px;
-    height: 590px;
+    width: 50%;
+    height: 50%;
     padding: 15rem 10rem;
     text-align: center;
     background: #fff;
