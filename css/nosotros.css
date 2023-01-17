@@ -154,6 +154,8 @@ main {
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
+    display: flex;
+    text-align: center;
 }
 
 /*Yamisbel Luna*/
@@ -191,6 +193,8 @@ main {
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
+    display: flex;
+    text-align: center;
 }
 
 .card3 .front {
@@ -211,6 +215,8 @@ main {
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
+    display: flex;
+    text-align: center;
 }
 
 .card4 .front {
@@ -230,6 +236,8 @@ main {
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
+    display: flex;
+    text-align: center;
 }
 
 .card5 .front {
@@ -250,6 +258,8 @@ main {
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
+    display: flex;
+    text-align: center;
 }
 
 .card6 .front {
@@ -277,7 +287,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
+    padding: 20px;
 }
 
 .back .p {
