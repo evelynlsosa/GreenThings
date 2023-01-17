@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
- /* buscar font igual y quitar código repetido */
+
 :root {
   --green: #0d9979;
   --text-white: #535c59;
@@ -85,7 +85,7 @@ nav a img {
   font-size: 4rem;
   color: #555;
   padding: 1rem;
-  padding-top: 7rem;
+  padding-top: 2rem;
 }
 
 .heading i {
@@ -162,7 +162,6 @@ image.redimension {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin: 40px;
 }
 

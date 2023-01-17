@@ -1,10 +1,38 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+:root {
+  --green: #0d9979;
+  --text-white: #535c59;
+  --text-ligh-color: #495551;
+  --body-bg-color: #eef6d7;
+  --glass-bg-color: hsla(0, 0%, 100%, 0.5);
+  --border-color: hsl(0, 0%, 100%);
+  --blur: blur(10px);
+  --button-hover-color: rgba(107, 180, 57, 0.3);
 }
 
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all .5s cubic-bezier(.37, 1.14, .26, 1.24);
 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: white;
+  color: var(--text-white);
+  font-family: aileron, sans-serif;
+} 
 
 /*### HEADER NAV ###*/
 
@@ -86,7 +114,6 @@ main {
     color: rgb(14, 13, 13);
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: auto;
     flex-wrap: wrap;
 
@@ -103,10 +130,10 @@ main {
 }
 
 .container {
-    width: 350px;
+    margin-left: 20px;
+    width: 360px;
     height: 500px;
     perspective: 800px;
-
 }
 
 .container:hover>.card {
@@ -142,6 +169,8 @@ main {
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
+    display: flex;
+    text-align: center;
 }
 
 .card2 .front {
