@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
  /* buscar font igual y quitar código repetido */
 :root {
-  --green: #0d9979;
-  --text-white: #535c59;
-  --text-ligh-color: #495551;
+  --green: #32bb50;
+  --text-white: #0f0f0f;
+  --text-ligh-color: #0f0f0f;
   --body-bg-color: #eef6d7;
   --glass-bg-color: hsla(0, 0%, 100%, 0.5);
   --border-color: hsl(0, 0%, 100%);
@@ -84,7 +84,7 @@ header {
 
 /*###INICIAR SESIÓN###*/
 .gradient-text {
-    background: #eef6d7;
+    background: #0b4d19;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -96,6 +96,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(../img/basura.png);
   }
   
   .form-content {
@@ -106,9 +107,9 @@ header {
   }
   
   .form-content .box {
-    background-color: #349b62b0;
+    background-color: rgba(172, 221, 134, 0.397);
     border-color: var(--glass-bg-color);
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(172, 221, 134, 0.397);
     padding: 40px 50px;
     border-radius: 20px;
     backdrop-filter: var(--blur);
@@ -239,6 +240,7 @@ footer {
   #Logo {
     display: flex;
     align-items: center;
+    color: white;
   }
   
   #redes {

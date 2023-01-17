@@ -144,6 +144,7 @@ body{
 	position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 10px;
+  color: rgb(39, 35, 35);
 }
 
 .right h2:after{
@@ -155,7 +156,7 @@ body{
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: #2ecc71;
+    background-color: #3bad44;
 }
 
 .field{
@@ -180,10 +181,11 @@ textarea{
 .btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
+	background-color: #3bad44;
 	color: #fff;
 	font-size: 1.1rem;
-	border: none;
+	border-radius: 16px;
+  border: none;
 	outline: none;
 	cursor: pointer;
 	transition: .3s;
@@ -226,6 +228,7 @@ footer {
   #Logo {
     display: flex;
     align-items: center;
+    color: white;
   }
   
   #redes {

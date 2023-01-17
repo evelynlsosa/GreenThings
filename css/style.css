@@ -83,7 +83,7 @@ nav a img {
 .heading {
   text-align: center;
   font-size: 4rem;
-  color: #555;
+  color: #0d9979;
   padding: 1rem;
   padding-top: 2rem;
 }
@@ -165,6 +165,11 @@ image.redimension {
   margin: 40px;
 }
 
+#TresR h2 {
+  color: #0d9979;
+
+}
+
 #TresR article {
   width: 326px;
   margin-bottom: 76px;
@@ -203,6 +208,7 @@ footer {
 #Logo {
   display: flex;
   align-items: center;
+  color: white;
 }
 
 #redes {

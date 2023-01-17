@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 :root {
-    --green: #7ad160;
+    --green: #3bad44;
     --black: #222;
     --white: #fff;
     --light-black: #666;
@@ -219,12 +219,12 @@ header {
   }
   
   .service .box-container .box i{
-    color: var(--peru);
+    color: #139b5b;
     font-size: 10rem;
   }
   
   .service .box-container .box h3{
-    color: var(--black);
+    color: #045658;
     font-size: 5rem;
   }
   
