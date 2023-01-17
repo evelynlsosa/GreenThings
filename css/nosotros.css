@@ -126,7 +126,7 @@ main {
     padding: 20px;
     margin-top: 20px;
     text-align: center;
-    color: #7a7a7a;
+    color: #045658;
 }
 
 .container {
@@ -281,7 +281,7 @@ main {
 
 
 .back {
-    background-color: #568d4f;
+    background: linear-gradient(90deg, rgb(105, 182, 150) 0%, rgb(18, 129, 111) 100%);
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -291,8 +291,9 @@ main {
     padding: 20px;
 }
 
-.back .p {
-    font-size: small;
+.back p {
+    color: white;
+    font-size: medium;
 
 }
 
