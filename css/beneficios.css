@@ -1,26 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-
-.wow{
-  font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
-  transition: all .5s cubic-bezier(.37, 1.14, .26, 1.24);
-}
-
-.wow {
-  width: 100%;
-  background-color: white;
-  color: var(--text-white);
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  overflow-x: hidden;
-} 
-
-
 /* BENEFICIOS */
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 :root {
     --green: #7ad160;
@@ -35,7 +16,7 @@
 }
 
 * {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis', 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -79,6 +60,8 @@ header {
   }
   
   .logo {
+    font-weight: 600;
+    font-size: 18px;
     display: flex;
     align-items: center;
     color: white;
@@ -90,7 +73,9 @@ header {
   }
   
   nav a {
+    font-family: 'Open Sans';
     font-weight: 600;
+    font-size: 16px;
     padding: 10px;
     color: white;
   }
@@ -423,6 +408,8 @@ footer {
   }
   
   #Logo {
+    font-family: 'Open Sans';
+    font-size: 16px;
     display: flex;
     align-items: center;
     color: white;
