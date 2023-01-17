@@ -92,12 +92,14 @@ nav a img {
 }
 
 .SobreNosotros .content h1 {
+    margin-bottom: 4%;
     font-size: 4rem;
     color: #55be8a;
 
 }
 
 .SobreNosotros .content p {
+    margin-bottom: 0%;
     font-size: 1.3rem;
     color: rgb(3, 3, 3);
     padding: 1rem 0;
